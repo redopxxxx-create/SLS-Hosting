@@ -1,0 +1,25 @@
+{
+  "name": "sls-hosting",
+  "description": "Telegram hosting bot + API control plane",
+  "repository": "https://github.com/your-org/sls-hosting",
+  "logo": "https://raw.githubusercontent.com/heroku/node-js-getting-started/main/public/node.svg",
+  "keywords": ["telegram", "hosting", "aiogram", "fastapi", "heroku"],
+  "stack": "heroku-22",
+  "formation": {
+    "bot": {"quantity": 1, "size": "basic"},
+    "api": {"quantity": 1, "size": "basic"}
+  },
+  "env": {
+    "BOT_TOKEN": {"description": "Telegram bot token", "required": true},
+    "BOT_OWNER_ID": {"description": "Telegram owner user id", "required": true},
+    "MONGO_URI": {"description": "MongoDB connection URI", "required": true},
+    "DB_NAME": {"description": "Database name", "value": "sls_hosting"},
+    "UPLOAD_ROOT": {"description": "Writable storage path", "value": "./storage"},
+    "MAX_FILE_SIZE_MB": {"description": "Max upload size in MB", "value": "100"},
+    "ADMIN_IDS": {"description": "Comma separated admin IDs", "required": false},
+    "SUPPORT_CHANNEL": {"description": "Support channel link", "value": "https://t.me/+yuLoicn7Djk0ZDY1"},
+    "POWERED_BY_TEXT": {"description": "Branding text", "value": "Powered by SLS BOTS"},
+    "RESTART_INTERVAL_HOURS": {"description": "Auto restart interval", "value": "24"},
+    "DEVELOPER_NAME": {"description": "Developer attribution", "value": "@ItsRyoSudhish"}
+  }
+}
