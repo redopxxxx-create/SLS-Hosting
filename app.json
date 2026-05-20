@@ -1,7 +1,7 @@
 {
   "name": "sls-hosting",
   "description": "Telegram hosting bot + API control plane",
-  "repository": "https://github.com/your-org/sls-hosting",
+  "repository": "https://github.com/redopxxxx-create/SLS-Hosting",
   "logo": "https://raw.githubusercontent.com/heroku/node-js-getting-started/main/public/node.svg",
   "keywords": ["telegram", "hosting", "aiogram", "fastapi", "heroku"],
   "stack": "heroku-22",
